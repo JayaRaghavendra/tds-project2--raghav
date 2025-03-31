@@ -289,7 +289,7 @@ def build_and_push_image(tag):
         str: The URL of the pushed image on Docker Hub.
     """
 
-    repo_name = "danielrayappa2210/TDS-Project-2---GA2-8---Dockerhub" #replace with your repo name
+    repo_name = "JayaRaghavendra/tds-project-2--ga2-8--dockerhub" #replace with your repo name 
     github_token = os.environ.get("ACCESS_TOKEN") #Get token from env variable.
 
     try:
@@ -305,7 +305,7 @@ def build_and_push_image(tag):
         # Update the tags line
         for step in yaml_content["jobs"]["build-and-push"]["steps"]:
             if step.get("uses") == "docker/build-push-action@v3":
-                step["with"]["tags"] = f"danielrayappa/tdsga:{tag}"
+                step["with"]["tags"] = f"raghavjaya007/tdsga:{tag}" #f"danielrayappa/tdsga:{tag}" 
 
         # Write the updated YAML content back
         updated_yaml = yaml.dump(yaml_content, default_flow_style=False)
@@ -318,7 +318,7 @@ def build_and_push_image(tag):
             branch="main", #Or whatever branch your workflow is on.
         )
         time.sleep(20)
-        return "https://hub.docker.com/repository/docker/danielrayappa/tdsga/general"
+        return "https://hub.docker.com/repository/docker/raghavjaya007/tdsga/general"
 
     except Exception as e:
         return None
@@ -406,12 +406,12 @@ if __name__ == "__main__":
     print(data_uri)
 
     print("=================Q3====================")
-    email = "daniel.putta@gramener.com"
+    email = "raghavendra.bobbili@gramener.com"
     gh_page_url = update_index_html(email)
     print(gh_page_url)
 
     print("=================Q4====================")
-    email = "daniel.putta@gramener.com"
+    email = "raghavendra.bobbili@gramener.com"
     print(run_colab_authentication(email))
 
     print("=================Q5====================")
