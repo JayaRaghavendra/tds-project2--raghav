@@ -390,7 +390,7 @@ def setup_llamafile_with_ngrok():
         None: If an error occurs during execution.
     """
 
-    return "https://llama-server-production-babb.up.railway.app/"
+    return "llama-server-production-5da3.up.railway.app/"
     
 
 # ====================================================================================================================
