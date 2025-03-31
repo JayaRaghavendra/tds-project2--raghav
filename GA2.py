@@ -108,7 +108,7 @@ def update_index_html(email):
         raise EnvironmentError("ACCESS_TOKEN environment variable is not set.")
     
     # Hard-coded settings
-    repo_name = "danielrayappa2210/TDS-GA2"  # Replace with your GitHub username and repository name
+    repo_name = "JayaRaghavendra/tds-ga2" # Replace with your GitHub username and repository name
     branch = "main"
     file_path = "index.html"
     
@@ -124,7 +124,7 @@ def update_index_html(email):
     commit_message = "Update index.html via Python script"
     update_response = repo.update_file(file.path, commit_message, new_content, file.sha, branch=branch)
     
-    return "https://danielrayappa2210.github.io/TDS-GA2/"
+    return "https://JayaRaghavendra.github.io/tds-ga2/"
 
 # ====================================================================================================================
 
@@ -183,12 +183,12 @@ def deploy_to_vercel(json_filepath):
         str: The deployed Vercel API URL or None if deployment fails."
     """
 
-    github_repo = "danielrayappa2210/TDS-Project-2---datastore"
+    github_repo = "JayaRaghavendra/tds-project-2--datastore"
     json_file = "q-vercel-python.json"
     github_branch = "main"
     access_token = os.getenv("ACCESS_TOKEN")
     vercel_token = os.getenv("VERCEL_TOKEN")
-    fixed_vercel_url = "https://tds-project-2-ga-2-6-vercel.vercel.app/api"
+    fixed_vercel_url = "https://tds-project-2-ga-2-6-vercel.vercel.app/api" 
 
     if not access_token or not vercel_token:
         print("Missing GitHub or Vercel token")
@@ -241,7 +241,7 @@ def update_and_trigger_workflow(email):
         str: The GitHub repository URL where the action is created.
     """
 
-    owner, repo, path, branch = "danielrayappa2210", "TDS", ".github/workflows/main.yml", "main"
+    owner, repo, path, branch = "JayaRaghavendra", "tdsw", ".github/workflows/main.yml", "main"
     token = os.getenv("ACCESS_TOKEN")
     if not token: return print("Missing ACCESS_TOKEN")
 
@@ -265,7 +265,7 @@ def update_and_trigger_workflow(email):
     # Trigger workflow
     trigger_url = f"https://api.github.com/repos/{owner}/{repo}/actions/workflows/main.yml/dispatches"
     if requests.post(trigger_url, json={"ref": branch}, headers=headers).status_code == 204:
-        return "https://github.com/danielrayappa2210/TDS"
+        return "https://github.com/JayaRaghavendra/tdsw"
     else:
         print("Failed to trigger workflow")
 
@@ -335,7 +335,7 @@ def deploy_fastapi(csv_filepath):
         str: The deployed API URL or None if deployment fails.
     """
 
-    github_repo = "danielrayappa2210/TDS-Project-2---datastore"
+    github_repo = "JayaRaghavendra/tds-project-2--datastore"
     csv_file = "q-fastapi.csv"
     github_branch = "main"
     access_token = os.getenv("ACCESS_TOKEN")
