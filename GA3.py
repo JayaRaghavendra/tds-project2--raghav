@@ -315,7 +315,7 @@ def docs_similarity_api_endpoint():
         "http://127.0.0.1:8000/similarity" during development or a deployed URL when published.
     """
 
-    return "https://tds-project-2-ga-3-7.vercel.app/similarity"
+    return "https://tds-project-2-ga3-7.vercel.app/similarity"
 
 # ====================================================================================================================
 
@@ -381,7 +381,7 @@ def employee_queries_api_endpoint():
         "http://127.0.0.1:8000/execute", or a deployed URL like "https://tds-project-2-ga-3-8.vercel.app/execute".
     """
 
-    return "https://tds-project-2-ga-3-8.vercel.app/execute"
+    return "https://tds-project-2-ga3-8.vercel.app/execute"
 
 # ====================================================================================================================
 
