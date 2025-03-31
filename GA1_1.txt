@@ -1,0 +1,55 @@
+Version:          Code 1.96.4 (cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba, 2025-01-16T00:16:19.038Z)
+OS Version:       Windows_NT x64 10.0.26100
+CPUs:             Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz (8 x 1800)
+Memory (System):  15.77GB (4.43GB free)
+VM:               0%
+Screen Reader:    no
+Process Argv:     --crash-reporter-id 7ad65c50-fb87-4b03-a0aa-0877cea4015f
+GPU Status:       2d_canvas:                              enabled
+                  canvas_oop_rasterization:               enabled_on
+                  direct_rendering_display_compositor:    disabled_off_ok
+                  gpu_compositing:                        enabled
+                  multiple_raster_threads:                enabled_on
+                  opengl:                                 enabled_on
+                  rasterization:                          enabled
+                  raw_draw:                               disabled_off_ok
+                  skia_graphite:                          disabled_off
+                  video_decode:                           enabled
+                  video_encode:                           enabled
+                  vulkan:                                 disabled_off
+                  webgl:                                  enabled
+                  webgl2:                                 enabled
+                  webgpu:                                 enabled
+                  webnn:                                  disabled_off
+
+CPU %   Mem MB     PID  Process
+    0      105   17540  code main
+    0      201    8328  window [1] (rough.py - housing price app - Visual Studio Code)
+    0       55   17412     utility-network-service
+    0       12   21652     crashpad-handler
+    0       64   22804  ptyHost
+    0        5    2552       conpty-agent
+    0        5    4748       conpty-agent
+    0       30   23084       C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command "try { . \"c:\Users\e430262\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1\" } catch {}"
+    0       35   27364       C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command "try { . \"c:\Users\e430262\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1\" } catch {}"
+    0       13   10756         C:\WINDOWS\system32\cmd.exe /c ""C:\Users\e430262\AppData\Local\Programs\Microsoft VS Code\bin\code.cmd" -s"
+    0      119   38372           electron-nodejs (cli.js )
+    1      146   26904             "C:\Users\e430262\AppData\Local\Programs\Microsoft VS Code\Code.exe" -s
+    0      105   25504               utility-network-service
+    0      100   33368               crashpad-handler
+    2      104   39132               gpu-process
+    0        6   31852       conpty-agent
+    0       22   37864       C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command "try { . \"c:\Users\e430262\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1\" } catch {}"
+    0      115   23604  extensionHost [1]
+    0        6   29316       c:\Users\e430262\.vscode\extensions\ms-python.python-2024.22.2-win32-x64\python-env-tools\bin\pet.exe server
+    0        4   37028         C:\WINDOWS\system32\conhost.exe 0x4
+    0       55   37860       electron-nodejs (bundle.js )
+    0      100   23828     gpu-process
+    0       77   24712  shared-process
+    0       62   34208  fileWatcher [1]
+
+Workspace Stats:
+|  Window (rough.py - housing price app - Visual Studio Code)
+|    Folder (housing price app): 7 files
+|      File types: py(2) jpg(1) csv(1) joblib(1) ipynb(1)
+|      Conf files:

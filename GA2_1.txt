@@ -1,0 +1,30 @@
+# Introduction
+
+## Methodology
+
+**import**
+
+*note*
+
+`print("Hello! World")`
+
+```python
+def greet(name):
+    print("Hello, "+name+"!")
+```
+
+- item 1
+- Item 2
+
+1. Step One
+2. Step Two
+
+| Name     | Email          |
+| -------- | -------------- |
+| Daniel   | daniel@gmail.com |
+
+[fenced code block](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks)
+
+![Markdown Logo](https://markdown-here.com/img/icon256.png)
+
+> You can do it
