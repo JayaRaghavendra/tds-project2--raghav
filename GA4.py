@@ -135,7 +135,7 @@ def country_outline_api_endpoint():
     Returns:
         str: The URL of the API endpoint where users can request structured country outlines.
     """
-    return "https://tds-project-2-ga-4-3.vercel.app/api/outline"
+    return "https://tds-project-2-ga4-3.vercel.app/api/outline" 
 
 # ====================================================================================================================
 
@@ -343,7 +343,6 @@ def get_most_recent_valid_user(location, min_followers, max_date_time):
                     }}
                 }}
             }}
-            """
         }
 
         response = requests.post(GITHUB_GRAPHQL_URL, json=graphql_query, headers=headers)
@@ -395,7 +394,7 @@ def create_github_action_workflow(email_id):
     """
 
     token = os.environ.get("ACCESS_TOKEN")
-    repo_name = "danielrayappa2210/TDA-Project-2---GA4-8"
+    repo_name = "JayaRaghavendra/tds-project-2--ga4-8"
     
     if not token or not repo_name:
         raise ValueError("Both GITHUB_TOKEN and REPO_NAME environment variables must be set.")
@@ -456,7 +455,7 @@ jobs:
         else:
             # Re-raise the exception if it's an unexpected error
             raise
-    return "https://github.com/danielrayappa2210/TDA-Project-2---GA4-8"
+    return "https://github.com/JayaRaghavendra/tds-project-2--ga4-8"
 
 # ====================================================================================================================
 
@@ -579,7 +578,7 @@ if __name__ == "__main__":
     print(latest_datetime)
 
     print("=================Q8====================")
-    print(create_github_action_workflow("daniel.putta@gramener.com"))
+    print(create_github_action_workflow("raghavendra.bobbili@gramener.com"))
 
     print("=================Q9====================")
     file = "test_data/q-extract-tables-from-pdf.pdf"
