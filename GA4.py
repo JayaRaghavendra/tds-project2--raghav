@@ -326,7 +326,7 @@ def get_most_recent_valid_user(location, min_followers, max_date_time):
     while True:
         # GraphQL query to fetch user details in a single request
         graphql_query = {
-            "query": f"""
+            "query": f'''
             query {{
                 search(query: "{query}", type: USER, first: {per_page} {f', after: "{cursor}"' if cursor else ''}) {{
                     pageInfo {{
@@ -343,6 +343,7 @@ def get_most_recent_valid_user(location, min_followers, max_date_time):
                     }}
                 }}
             }}
+            '''
         }
 
         response = requests.post(GITHUB_GRAPHQL_URL, json=graphql_query, headers=headers)
