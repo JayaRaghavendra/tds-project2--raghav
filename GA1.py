@@ -541,7 +541,7 @@ def create_github_repo_and_push_json(email_id: str) -> str:
         raise EnvironmentError("ACCESS_TOKEN environment variable is not set.")
     
     # Hard-coded settings
-    repo_name = "danielrayappa2210/TDS"  # Replace with your GitHub username and repository name
+    repo_name = "JayaRaghavendra/tdsw"# Replace with your GitHub username and repository name
     branch = "main"
     file_path = "email.json"
     
@@ -557,7 +557,7 @@ def create_github_repo_and_push_json(email_id: str) -> str:
     commit_message = "Update index.html via Python script"
     update_response = repo.update_file(file.path, commit_message, new_content, file.sha, branch=branch)
     
-    return "https://raw.githubusercontent.com/danielrayappa2210/TDS/refs/heads/main/email.json"
+    return "https://raw.githubusercontent.com/JayaRaghavendra/tdsw/refs/heads/main/email.json"
 
 # ====================================================================================================================
 
